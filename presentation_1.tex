@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Beamer Presentation
 % LaTeX Template
-% Version 1.0 (10/11/12)
+% Version 2.0 (27/IX/15)
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% This template has been downloaded from http://www.LaTeXTemplates.com
+% and modified by Semen Martynov <semen.martynov@gmail.com>
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -77,12 +77,41 @@
 \setbeamertemplate{caption}[numbered] % Image numbers
 }
 
-\usepackage[utf8]{inputenc} % Russian language!
-\usepackage[russian]{babel}
-\usepackage{cmap}
+%%%% Charset (don't forget about texlive-lang-cyrillic)
+\usepackage{cmap}							% make PDF files searchable and copyable
+\usepackage[utf8x]{inputenc}				% accept different input encodings
+\usepackage[T2A]{fontenc}					% russian font
+\usepackage[russian]{babel}					% multilingual support (T2A)
 
-\usepackage{graphicx} % Allows including images
-\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+%%%% Graphics
+%\usepackage[dvipsnames]{xcolor}			% driver-independent color extensions
+\usepackage{graphicx}						% enhanced support for graphics
+\usepackage{wrapfig}						% produces figures which text can flow around
+
+%%%% Math
+\usepackage{amsmath}						% American Mathematical Society (AMS) math facilities
+\usepackage{amsfonts}						% fonts from the AMS
+\usepackage{amssymb}						% additional math symbols
+
+%%%% Typograpy (don't forget about cm-super)
+\usepackage{microtype}						% subliminal refinements towards typographical perfection
+%\linespread{1.3}							% line spacing
+\setlength{\parindent}{0pt}					% we don't want any paragraph indentation
+\usepackage{parskip}						% some distance between paragraphs
+
+%%%% Tables
+\usepackage{booktabs}						% Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage{tabularx}						% tables with variable width columns
+%\usepackage{multirow}						% for tabularx
+%\usepackage{hhline}							% for tabularx
+
+%%%% Graph
+%\usepackage{tikz}							% package for creating graphics programmatically
+%\usetikzlibrary{arrows}						% edges for tikz
+
+%%%% Other
+%\usepackage{url}							% verbatim with URL-sensitive line breaks
+%\usepackage{fancyvrb}						% sophisticated verbatim text (with box)
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
