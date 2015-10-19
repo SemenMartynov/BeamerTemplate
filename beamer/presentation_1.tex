@@ -12,7 +12,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND THEMES
+%    PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
 \documentclass{beamer}
@@ -74,80 +74,80 @@
 %\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
 %\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
-\setbeamertemplate{caption}[numbered] % Image numbers
+\setbeamertemplate{caption}[numbered]         % Image numbers
 }
 
 %%%% Charset (don't forget about texlive-lang-cyrillic)
-\usepackage{cmap}							% make PDF files searchable and copyable
-\usepackage[utf8x]{inputenc}				% accept different input encodings
-\usepackage[T2A]{fontenc}					% russian font
-\usepackage[russian]{babel}					% multilingual support (T2A)
+\usepackage{cmap}                             % make PDF files searchable and copyable
+\usepackage[utf8x]{inputenc}                  % accept different input encodings
+\usepackage[T2A]{fontenc}                     % russian font
+\usepackage[russian]{babel}                   % multilingual support (T2A)
 
 %%%% Graphics
-%\usepackage[dvipsnames]{xcolor}			% driver-independent color extensions
-\usepackage{graphicx}						% enhanced support for graphics
-\usepackage{wrapfig}						% produces figures which text can flow around
+%\usepackage[dvipsnames]{xcolor}              % driver-independent color extensions
+\usepackage{graphicx}                         % enhanced support for graphics
+\usepackage{wrapfig}                          % produces figures which text can flow around
 
 %%%% Math
-\usepackage{amsmath}						% American Mathematical Society (AMS) math facilities
-\usepackage{amsfonts}						% fonts from the AMS
-\usepackage{amssymb}						% additional math symbols
+\usepackage{amsmath}                          % American Mathematical Society (AMS) math facilities
+\usepackage{amsfonts}                         % fonts from the AMS
+\usepackage{amssymb}                          % additional math symbols
 
 %%%% Typograpy (don't forget about cm-super)
-\usepackage{microtype}						% subliminal refinements towards typographical perfection
-%\linespread{1.3}							% line spacing
-\setlength{\parindent}{0pt}					% we don't want any paragraph indentation
-\usepackage{parskip}						% some distance between paragraphs
+\usepackage{microtype}                        % subliminal refinements towards typographical perfection
+%\linespread{1.3}                             % line spacing
+\setlength{\parindent}{0pt}                   % we don't want any paragraph indentation
+\usepackage{parskip}                          % some distance between paragraphs
 
 %%%% Tables
-\usepackage{booktabs}						% Allows the use of \toprule, \midrule and \bottomrule in tables
-%\usepackage{tabularx}						% tables with variable width columns
-%\usepackage{multirow}						% for tabularx
-%\usepackage{hhline}							% for tabularx
+\usepackage{booktabs}                         % Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage{tabularx}                        % tables with variable width columns
+%\usepackage{multirow}                        % for tabularx
+%\usepackage{hhline}                          % for tabularx
 
 %%%% Graph
-%\usepackage{tikz}							% package for creating graphics programmatically
-%\usetikzlibrary{arrows}						% edges for tikz
+%\usepackage{tikz}                            % package for creating graphics programmatically
+%\usetikzlibrary{arrows}                      % edges for tikz
 
 %%%% Other
-%\usepackage{url}							% verbatim with URL-sensitive line breaks
-%\usepackage{fancyvrb}						% sophisticated verbatim text (with box)
+%\usepackage{url}                             % verbatim with URL-sensitive line breaks
+%\usepackage{fancyvrb}                        % sophisticated verbatim text (with box)
 
 %----------------------------------------------------------------------------------------
-%	TITLE PAGE
+%    TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Short title]{Full Title of the Talk}   % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{John Smith} % Your name
-\institute[UCLA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author{John Smith}                           % Your name
+\institute[UCLA]                              % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-University of California \\ % Your institution for the title page
+University of California \\                   % Your institution for the title page
 \medskip
-\textit{john@smith.com} % Your email address
+\textit{john@smith.com}                       % Your email address
 }
-\date{\today} % Date, can be changed to a custom date
+\date{\today}                                 % Date, can be changed to a custom date
 
 \begin{document}
 
 \begin{frame}
-\titlepage % Print the title page as the first slide
+\titlepage                                    % Print the title page as the first slide
 \end{frame}
 
 \begin{frame}
-\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\frametitle{Overview}                         % Table of contents slide, comment this block out to remove it
+\tableofcontents                              % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
+%    PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{First Section}                       % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\subsection{Subsection Example}               % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
 \frametitle{Paragraphs of Text}
@@ -190,9 +190,9 @@ Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenati
 
 \begin{frame}
 \frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+\begin{columns}[c]                            % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-\column{.45\textwidth} % Left column and width
+\column{.45\textwidth}                        % Left column and width
 \textbf{Heading}
 \begin{enumerate}
 \item Statement
@@ -200,7 +200,7 @@ Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenati
 \item Example
 \end{enumerate}
 
-\column{.5\textwidth} % Right column and width
+\column{.5\textwidth}                         % Right column and width
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
 
 \end{columns}
@@ -237,7 +237,7 @@ $E = mc^2$
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\begin{frame}[fragile]                        % Need to use the fragile option when verbatim is used in the slide
 \frametitle{Verbatim}
 \begin{example}[Theorem Slide Code]
 \begin{verbatim}
@@ -262,7 +262,7 @@ Uncomment the code on this slide to include your own image from the same directo
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\begin{frame}[fragile]                        % Need to use the fragile option when verbatim is used in the slide
 \frametitle{Citation}
 An example of the \verb|\cite| command to cite within the presentation:\\~
 
@@ -274,7 +274,7 @@ This statement requires citation \cite{p1}.
 \begin{frame}
 \frametitle{References}
 \footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\begin{thebibliography}{99}                   % Beamer does not support BibTeX so references must be inserted manually as below
 \bibitem[Smith, 2012]{p1} John Smith (2012)
 \newblock Title of the publication
 \newblock \emph{Journal Name} 12(3), 45 -- 678.
