@@ -41,14 +41,14 @@
 %------------------------------------------------------------------------------
 \usepackage{listings}                         % typeset source code listings
 
-% Цвета для кода
+% The colors for syntax highlighting.
 \definecolor{mygreen}{HTML}{3F7F5F}           % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
 
-% Настройки отображения кода
+% Code listing settings
 \lstset{language=Matlab,%
     %basicstyle=\color{red},
-    breaklines    =  true,                    % Перенос длинных строк
+    breaklines    =  true,                    % wrap long lines
     morekeywords  =  {matlab2tikz},           %
     keywordstyle  =  \color{blue},            %
     morekeywords  =  [2]{1},                  %
@@ -58,17 +58,17 @@
     commentstyle  =  \color{mygreen},         %
     showstringspaces=false,                   % don't mark spaces in strings
     frame         =  tblr                     % draw a frame at all sides of the code block
-    rulecolor     =  \color{frame},           % Цвет рамки
+    rulecolor     =  \color{frame},           % frame color
     tabsize       =  2,                       % tab space width
     showstringspaces=false,                   % don't mark spaces in strings
     numbers       =  left,                    %
     numberstyle   =  {\tiny \color{black}},   % size of the numbers
     numbersep     =  9pt,                     % this defines how far the numbers are from the text
     emph          =  [1]{for,end,break},      %
-    emphstyle     =  [1]\color{red},          %some words to emphasise
+    emphstyle     =  [1]\color{red},          % some words to emphasise
     %emph         =  [2]{word1,word2},        %
     %emphstyle    =  [2]{style},              %
-    extendedchars =  true,                    % Для отображения русского языка
+    extendedchars =  true,                    % For the Russian language support
     literate=
         {Ö}{{\"O}}1                    {Ä}{{\"A}}1                    {Ü}{{\"U}}1
         {ß}{{\ss}}1                    {ü}{{\"u}}1                    {ä}{{\"a}}1
@@ -100,21 +100,21 @@
         {Ґ}{{\selectfont\char128}}1
 }
 
-\usepackage{caption}                          % Для настройки заголовка кода
+\usepackage{caption}                          % Set listing header
 \DeclareCaptionFont{white}{\color{сaptiontext}}
 \DeclareCaptionFormat{listing}{\parbox{\linewidth}{\colorbox{сaptionbk}{\parbox{\linewidth}{#1#2#3}}\vskip-4pt}}
 %\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
-\renewcommand{\lstlistingname}{Листинг}       % Переименование Listings в нужное именование структуры
+%\renewcommand{\lstlistingname}{Листинг}       % Renaming 'Listings' in the right structure name
 %------------------------------------------------------------------------------
 
 \begin{document}
 
-%\input{titlepage}                            % Титульная страница
+%\input{titlepage}                            % inclide the title page
 \tableofcontents
 
 %------------------------------------------------------------------------------
 
-%\input{text}                                 % Текст
+%\input{text}                                 % inclide the main text
 
 %------------------------------------------------------------------------------
 
